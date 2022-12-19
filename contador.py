@@ -6,6 +6,12 @@ def main_contador():
             f.write('0')
     except:
         print('Fichero corrupto')
+    try:
+        f=open('contador.txt', 'r')
+        cont=int(f.read())
+        f.close()
+    except ValueError:
+        print('No se pudo pasar el valor del archivo a entero')
 
     pr2=input('Desea incrementar o decrementar el contador? (inc/dec): ')
     if pr2=='inc':
