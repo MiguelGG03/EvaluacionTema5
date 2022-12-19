@@ -5,7 +5,10 @@ def resta(a, b):
     return a - b
 
 def producto(a, b):
-    return a*b
+    if(type(a)==str and type(b)==str):
+        print("No se puede multiplicar una cadena de string")
+    else:
+        return a*b
 
 def division(a,b):
     if(type(a)==str and type(b)==str):
