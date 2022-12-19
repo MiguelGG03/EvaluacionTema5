@@ -2,7 +2,10 @@ def suma(a, b):
     return a + b
 
 def resta(a, b):
-    return a - b
+    if(type(a)==str and type(b)==str):
+        print("No se puede restar una cadena de string")
+    else:
+        return a - b
 
 def producto(a, b):
     if(type(a)==str and type(b)==str):
