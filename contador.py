@@ -5,6 +5,24 @@ def main_contador():
         with open('contador.txt', 'w') as f:
             f.write('0')
 
+    pr2=input('Desea incrementar o decrementar el contador? (inc/dec): ')
+    if pr2=='inc':
+        f=open('contador.txt', 'r')
+        cont=int(f.read())
+        f.close()
+        f=open('contador.txt', 'w')
+        f.write(str(cont+1))
+        f.close()
+
+    elif pr2=='dec':
+        f=open('contador.txt', 'r')
+        cont=int(f.read())
+        f.close()
+        f=open('contador.txt', 'w')
+        f.write(str(cont-1))
+        f.close()
+
+    sigue=True
     while(sigue):
         pr1=input('Desea seguir incrementando el contador? (s/n): ')
         if pr1=='s':
@@ -15,6 +33,7 @@ def main_contador():
                 f.close()
                 f=open('contador.txt', 'w')
                 f.write(str(cont+1))
+                f.close()
 
             elif pr2=='dec':
                 f=open('contador.txt', 'r')
@@ -22,6 +41,7 @@ def main_contador():
                 f.close()
                 f=open('contador.txt', 'w')
                 f.write(str(cont-1))
+                f.close()
         elif(pr1=='n'):
             sigue=False
             f.close()
