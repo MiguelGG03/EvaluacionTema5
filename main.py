@@ -17,6 +17,7 @@ def main():
     elif pr1=='2':
         main_contador()
 
- 
+if __name__=='__main__':
+    main()
 
     
