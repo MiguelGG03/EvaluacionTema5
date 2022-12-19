@@ -21,7 +21,10 @@ def main_contador():
         f=open('contador.txt', 'w')
         f.write(str(cont-1))
         f.close()
-
+    else:
+        cont=str(f.read())
+        print('Opcion no valida, el contador final es {}'.format(cont))
+        f.close()
     sigue=True
     while(sigue):
         pr1=input('Desea seguir incrementando el contador? (s/n): ')
@@ -42,15 +45,19 @@ def main_contador():
                 f=open('contador.txt', 'w')
                 f.write(str(cont-1))
                 f.close()
+            else:
+                sigue=False
         elif(pr1=='n'):
+            cont=str(f.read())
+            print('El contador final es {}'.format(cont))
+            f.close()
             sigue=False
-            f.close()
+            
         else:
-            print('Opcion no valida')
+            cont=str(f.read())
+            print('Opcion no valida, el contador final es {}'.format(cont))
             f.close()
-    f=open('contador.txt', 'r')
-    print('El contador final es: {}'.format(f.read()))
-    f.close()    
+            sigue=False   
 
 if __name__ == '__main__':
     main_contador()
