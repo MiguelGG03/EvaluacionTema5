@@ -4,6 +4,8 @@ def main_contador():
     except FileNotFoundError:
         with open('contador.txt', 'w') as f:
             f.write('0')
+    except:
+        print('Fichero corrupto')
 
     pr2=input('Desea incrementar o decrementar el contador? (inc/dec): ')
     if pr2=='inc':
