@@ -8,8 +8,12 @@ def producto(a, b):
     return a*b
 
 def division(a,b):
-    try:
-        return a/b
-    except ZeroDivisionError:
-        print("No se puede dividir por cero")
-        return None
+    if(type(a)==str and type(b)==str):
+        print("No se puede dividir una cadena de string")
+    else:
+        try:
+            return a/b
+        except ZeroDivisionError:
+            print("No se puede dividir por cero")
+            return None
+    
