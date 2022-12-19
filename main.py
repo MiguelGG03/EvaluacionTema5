@@ -1,4 +1,5 @@
 from operaciones import *
+from contador import main_contador
 
 def main():
     pr1=input('Ingrese el ejercicio que desea ver:\n'
@@ -13,6 +14,8 @@ def main():
         print( "{} - {} = {}".format(b, d, resta(b, d) ) )
         print( "{} * {} = {}".format(b, b, producto(b, b) ) )
         print( "{} / {} = {}".format(a, c, division(a, c) ) )
+    elif pr1=='2':
+        main_contador()
 
  
 
