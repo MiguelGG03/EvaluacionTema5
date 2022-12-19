@@ -1,5 +1,8 @@
 def suma(a, b):
-    return a + b
+    if(type(a)==str and type(b)==str):
+        print("No se puede sumar una cadena de string")
+    else:
+        return a + b
 
 def resta(a, b):
     if(type(a)==str and type(b)==str):
