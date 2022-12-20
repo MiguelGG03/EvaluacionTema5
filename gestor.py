@@ -47,8 +47,8 @@ class Gestor:
 
 
     def eliminar_personaje(self,personaje):
-        if(type(personaje)!=Personaje):
-            raise TypeError('El personaje debe ser de tipo Personaje')
+        if(type(personaje)!=str):
+            raise TypeError('Debe introducir el nombre del personaje')
         else:
             for i in self.lista_personajes:
                 if(i.nombre==personaje):
@@ -77,6 +77,9 @@ def main_gestor():
     gestor.añadir_personaje(arquero)
     gestor.añadir_personaje(guerrero)
     print('\nAñadimos 3 personajes\n')
+    gestor.__str__()
+    gestor.eliminar_personaje('Arquero')
+    print('\nEliminamos al Arquero\n')
     gestor.__str__()
 
 
