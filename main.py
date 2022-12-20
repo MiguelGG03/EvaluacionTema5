@@ -1,6 +1,7 @@
 from operaciones import *
 from contador import main_contador
 from gestor import *
+from reloj import *
 
 def main():
     pr1=input('Ingrese el ejercicio que desea ver:\n'
@@ -19,6 +20,11 @@ def main():
         main_contador()
     elif pr1=='3':
         main_gestor()
+    elif pr1=='4':
+        main_reloj()
+    else:
+        print('Opción no válida')
+        main()
 
 if __name__=='__main__':
     main()
