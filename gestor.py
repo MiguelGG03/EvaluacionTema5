@@ -59,6 +59,11 @@ class Gestor:
         for i in self.lista_personajes:
             if(i.nombre==personaje):
                 return 'Nombre: {}, Vida: {}, Daño: {}, Defensa: {}, Alcanze: {}'.format(i.nombre,i.vida,i.daño,i.defensa,i.alcanze)
+    
+    def __str__(self):
+        print('Nombre, Vida, Daño, Defensa, Alcanze')
+        for i in self.lista_personajes:
+            print('{}, {}, {}, {}, {}'.format(i.nombre,i.vida,i.daño,i.defensa,i.alcanze))
 
 
 def main_gestor():
