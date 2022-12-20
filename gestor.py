@@ -76,7 +76,7 @@ def main_gestor():
     gestor.añadir_personaje(caballero)
     gestor.añadir_personaje(arquero)
     gestor.añadir_personaje(guerrero)
-    print('Añadimos 3 personajes')
+    print('\nAñadimos 3 personajes\n')
     gestor.__str__()
 
 
