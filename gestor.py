@@ -34,5 +34,9 @@ class Gestor:
     pass
 
 def main_gestor():
-    p=Personaje('Juan',100,10,5,0)
+    p=Personaje('Juan',100,10,5,1)
     print(p)
+
+
+if __name__=='__main__':
+    main_gestor()
