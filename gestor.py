@@ -67,8 +67,10 @@ class Gestor:
 
 
 def main_gestor():
-    p=Personaje('Juan',100,10,5,1)
-    print(p)
+    gestor=Gestor()
+    caballero=Personaje('Caballero',4,2,4,2)
+    arquero=Personaje('Arquero',2,4,1,8)
+    guerrero=Personaje('Guerrero',2,4,2,4)
 
 
 if __name__=='__main__':
