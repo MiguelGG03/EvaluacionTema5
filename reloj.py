@@ -4,7 +4,7 @@ import time
 
 
 def main_reloj():
-    print('Presione Enter para parar del reloj')
+    print('Presione Enter para parar el reloj')
     print('En cinco segundos se iniciara el reloj')
     time.sleep(5)
     while True:
