@@ -54,7 +54,12 @@ class Gestor:
                 if(i.nombre==personaje):
                     self.lista_personajes.remove(i)
 
-        
+
+    def __str__personaje__(self,personaje):
+        for i in self.lista_personajes:
+            if(i.nombre==personaje):
+                return 'Nombre: {}, Vida: {}, Daño: {}, Defensa: {}, Alcanze: {}'.format(i.nombre,i.vida,i.daño,i.defensa,i.alcanze)
+
 
 def main_gestor():
     p=Personaje('Juan',100,10,5,1)
