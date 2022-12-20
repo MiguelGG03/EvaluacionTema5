@@ -1,5 +1,6 @@
 from operaciones import *
 from contador import main_contador
+from gestor import *
 
 def main():
     pr1=input('Ingrese el ejercicio que desea ver:\n'
@@ -16,6 +17,8 @@ def main():
         print( "{} / {} = {}".format(a, c, division(a, c) ) )
     elif pr1=='2':
         main_contador()
+    elif pr1=='3':
+        main_gestor()
 
 if __name__=='__main__':
     main()
