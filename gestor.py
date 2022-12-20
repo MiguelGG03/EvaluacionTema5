@@ -31,8 +31,11 @@ class Personaje:
 
 
 class Gestor:
+
     def __init__(self):
         self.lista_personajes=[]
+
+
     def añadir_personaje(self,personaje):
         if(type(personaje)!=Personaje):
             raise TypeError('El personaje debe ser de tipo Personaje')
@@ -41,12 +44,14 @@ class Gestor:
                 if(i==personaje):
                     raise ValueError('El personaje ya existe')
             self.lista_personajes.append(personaje)
+
+
     def eliminar_personaje(self,personaje):
         if(type(personaje)!=Personaje):
             raise TypeError('El personaje debe ser de tipo Personaje')
         else:
             for i in self.lista_personajes:
-                if(i==personaje):
+                if(i.nombre==personaje):
                     self.lista_personajes.remove(i)
 
         
