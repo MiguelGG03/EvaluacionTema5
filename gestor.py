@@ -71,6 +71,13 @@ def main_gestor():
     caballero=Personaje('Caballero',4,2,4,2)
     arquero=Personaje('Arquero',2,4,1,8)
     guerrero=Personaje('Guerrero',2,4,2,4)
+    print('No hay nada')
+    gestor.__str__()
+    gestor.añadir_personaje(caballero)
+    gestor.añadir_personaje(arquero)
+    gestor.añadir_personaje(guerrero)
+    print('Añadimos 3 personajes')
+    gestor.__str__()
 
 
 if __name__=='__main__':
