@@ -10,13 +10,15 @@ def main_reloj():
     time.sleep(5)
     
     while True:
-        os.system('cls')
-        print(time.strftime('%H:%M:%S'))
-        time.sleep(1)
-        if input()=='':
+        try:
+            if k.is_pressed('Enter'):
+                break
+            else:
+                os.system('cls')
+                print(time.strftime('%H:%M:%S'))
+                time.sleep(1)
+        except:
             break
-        else:
-            pass
 
 if __name__=='__main__':
     main_reloj()
