@@ -1,5 +1,6 @@
 import os
 import time
+import pynput as p
 
 
 
@@ -14,9 +15,7 @@ def main_reloj():
         time.sleep(1)
         if input()=='':
             break
-        else:
-            continue
-
+    
 
 if __name__=='__main__':
     main_reloj()
