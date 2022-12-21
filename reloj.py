@@ -1,6 +1,6 @@
 import os
 import time
-import pynput as p
+import keyboard as k
 
 
 
@@ -15,7 +15,8 @@ def main_reloj():
         time.sleep(1)
         if input()=='':
             break
-    
+        else:
+            pass
 
 if __name__=='__main__':
     main_reloj()
